@@ -13,4 +13,7 @@ JetBrains trial restart 2020.2 (Windows) and 2020.1 (MacOs, Linux). Products: In
 
 ##### Webarchives: https://pastebin.com/N3hT2jP8
 
-## Good luck! <3
+## Good bye! <3
+
+sudo tar xzf PhpStorm-2020.2.tar.gz --strip-components=1 -C "/opt/phpstorm"
+/opt/phpstorm/bin/phpstorm.sh
