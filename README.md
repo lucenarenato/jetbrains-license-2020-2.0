@@ -19,4 +19,13 @@ JetBrains trial restart 2020.2 (Windows) and 2020.1 (MacOs, Linux). Products: In
 sudo tar xzf PhpStorm-2020.2.tar.gz --strip-components=1 -C "/opt/phpstorm"
 /opt/phpstorm/bin/phpstorm.sh
 chmod +x mac_linux_pengzhile.sh
+
+mkdir /opt/phpstorm \
+    && wget -O - https://download.jetbrains.com/webide/PhpStorm-2020.2.tar.gz | tar xzf - --strip-components=1 -C "/opt/phpstorm"
+
+useradd -m -s /bin/bash renato \
+    && mkdir /home/renato/.PhpStorm2020.2 \
+    && touch /home/renato/.PhpStorm2020.2/.keep \
+    && chown -R renato:renato /home/renato \
+    && usermod -d /home/renato renato
 ```
